@@ -1,4 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+/* whole page */
 * {
 	padding: 0;
 	margin: 0;
@@ -74,13 +76,13 @@ p {
 /* Header section */
 #head {
 	position: fixed;
-	z-index: 1000;
+	z-index: 999;
 	left: 0;
 	top: 0;
 	width: 100vw;
 	height: auto;
 }
-#head .header {
+#head .head {
 	min-height: 8vh;
 	background-color: rgba(31, 30, 30, 0.24);
 	transition: 0.3s ease background-color;
@@ -263,3 +265,65 @@ p {
 }
 
 /* End of Home Section */
+
+/* Services Section */
+#services .services {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#services .service-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#services .s-bot {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#services .s-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(./img/img-1.png);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#services .s-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#services .s-bot.icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+#services .s-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#services .s-item p {
+	color: white;
+	text-align: left;
+}
+/* End Services Section */
