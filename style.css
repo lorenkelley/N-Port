@@ -327,3 +327,75 @@ p {
 	text-align: left;
 }
 /* End Services Section */
+
+/* Projects section */
+#work .work {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#work .w-head h1 {
+	margin-bottom: 50px;
+}
+#work .w-all {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#work .w-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#work .w-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+#work .w-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+#work .w-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#work .w-info p {
+	color: white;
+}
+#work .w-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#work .w-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.7;
+}
+#work .w-img img {
+	transition: 0.3s ease transform;
+}
+#work .w-item:hover .w-img img {
+	transform: scale(1.1);
+}
