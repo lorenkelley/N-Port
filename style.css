@@ -166,7 +166,7 @@ p {
 	width: 100%;
 	border-radius: 50%;
 	border: 3px solid white;
-	animation: hamburger_puls 1s ease infinite;
+	animation: ham_pulse 1s ease infinite;
 }
 #head .menu .bar {
 	height: 2px;
@@ -231,7 +231,7 @@ p {
 	font-size: 4rem;
 	position: relative;
 	color: transparent;
-	animation: text_reveal 0.5s ease forwards;
+	animation: txt_display 0.5s ease forwards;
 	animation-delay: 1s;
 }
 #home h1:nth-child(1) {
@@ -241,7 +241,7 @@ p {
 	animation-delay: 2s;
 }
 #home h1:nth-child(3) {
-	animation: text_reveal_name 0.5s ease forwards;
+	animation: txt_name_display 0.5s ease forwards;
 	animation-delay: 3s;
 }
 #home h1 span {
@@ -251,7 +251,7 @@ p {
 	height: 100%;
 	width: 0;
 	background-color: rgb(255, 72, 0);
-	animation: text_reveal_box 1s ease;
+	animation: txt_box_display 1s ease;
 	animation-delay: 0.5s;
 }
 #home h1:nth-child(1) span {
@@ -442,7 +442,7 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid crimson;
+	border: 7px solid rgb(255, 72, 0);
 	z-index: -1;
 }
 
@@ -523,4 +523,38 @@ p {
 #footer p {
 	color: white;
 	font-size: 1.3rem;
+}
+
+@keyframes txt_box_display {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+
+@keyframes ham_pulse {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
+
+@keyframes txt_display {
+	100% {
+		color: white;
+	}
+}
+@keyframes txt_name_display {
+	100% {
+		color: rgb(255, 72, 0);
+		font-weight: 500;
+	}
 }
