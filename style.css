@@ -274,7 +274,7 @@ p {
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#services .service-top {
+#services .s-top {
 	max-width: 500px;
 	margin: 0 auto;
 }
@@ -525,6 +525,8 @@ p {
 	font-size: 1.3rem;
 }
 
+/*Keyframe for text and hamburger */
+
 @keyframes txt_box_display {
 	50% {
 		width: 100%;
@@ -556,5 +558,140 @@ p {
 	100% {
 		color: rgb(255, 72, 0);
 		font-weight: 500;
+	}
+}
+
+/* Media Query For Mobile */
+@media only screen and (min-width: 768px) {
+	.btn {
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+	h1.s-title {
+		font-size: 6rem;
+	}
+
+	/* Home Section */
+	#home h1 {
+		font-size: 7rem;
+	}
+	/* Home section End */
+
+	/* Services Section */
+	#services .s-bot .s-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* End Services Section */
+
+	/* Work Section */
+	#work .w-item {
+		flex-direction: row;
+	}
+	#work .w-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#work .w-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#work .w-all .w-info {
+		height: 100%;
+	}
+	#work .w-all .w-img {
+		height: 100%;
+	}
+	/* Work Section End */
+
+	/* About Section */
+	#about .about {
+		flex-direction: row;
+	}
+	#about .left-column {
+		width: 600px;
+		height: 400px;
+		padding-left: 60px;
+	}
+	#about .about .left-column .a-img::after {
+		left: -45px;
+		top: 34px;
+		height: 98%;
+		width: 98%;
+		border: 10px solid crimson;
+	}
+	#about .right-column {
+		text-align: left;
+		padding: 30px;
+	}
+	#about .right-column h1 {
+		text-align: left;
+	}
+	/* About Section */
+
+	/* Contact Section  */
+	#contact .contact {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+	}
+	#contact .c-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	#contact .c-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+	#contact .c-item .icon {
+		height: 100px;
+		width: 100px;
+	}
+	#contact .c-item .icon img {
+		object-fit: contain;
+	}
+	#contact .c-item .c-info {
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+	}
+	/* End contact  */
+}
+/* End Media Query For Mobile */
+
+/*Desktop view*/
+@media only screen and (min-width: 1200px) {
+	/* header */
+	#head .menu {
+		display: none;
+	}
+	#head .navlink ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#head .navlink ul li {
+		display: inline-block;
+	}
+	#head .navlink ul li a {
+		font-size: 1.8rem;
+	}
+	#head .nav-list ul a:after {
+		display: none;
+	}
+	/* End header */
+
+	#services .s-bot .s .s-item {
+		flex-basis: 22%;
+		margin: 1.5%;
 	}
 }
