@@ -489,3 +489,38 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
+
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer .soc-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+#footer .soc-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+#footer .soc-item img {
+	filter: grayscale(1);
+	transition: 0.3s ease filter;
+}
+#footer .soc-item:hover img {
+	filter: grayscale(0);
+}
+#footer p {
+	color: white;
+	font-size: 1.3rem;
+}
