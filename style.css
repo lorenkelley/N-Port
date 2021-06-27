@@ -328,23 +328,23 @@ p {
 }
 /* End Services Section */
 
-/* Projects section */
-#work .work {
+/* Properties section */
+#properties .properties {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#work .w-head h1 {
+#properties .w-head h1 {
 	margin-bottom: 50px;
 }
-#work .w-all {
+#properties .w-all {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
-#work .w-item {
+#properties .w-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -354,7 +354,7 @@ p {
 	overflow: hidden;
 	border-radius: 10px;
 }
-#work .w-info {
+#properties .w-info {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
@@ -365,25 +365,25 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
-#work .w-info h1 {
+#properties .w-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 }
-#work .w-info h2 {
+#properties .w-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
-#work .w-info p {
+#properties .w-info p {
 	color: white;
 }
-#work .w-img {
+#properties .w-img {
 	flex-basis: 50%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
-#work .w-img:after {
+#properties .w-img:after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -393,10 +393,10 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: 0.7;
 }
-#work .w-img img {
+#properties .w-img img {
 	transition: 0.3s ease transform;
 }
-#work .w-item:hover .w-img img {
+#properties .w-item:hover .w-img img {
 	transform: scale(1.1);
 }
 
@@ -489,6 +489,10 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
+
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}    
 
 #footer .footer {
 	min-height: 200px;
@@ -584,26 +588,26 @@ p {
 	}
 	/* End Services Section */
 
-	/* Work Section */
-	#work .w-item {
+	/* Properties Section */
+	#properties .w-item {
 		flex-direction: row;
 	}
-	#work .w-item:nth-child(even) {
+	#properties .w-item:nth-child(even) {
 		flex-direction: row-reverse;
 	}
-	#work .w-item {
+	#properties .w-item {
 		height: 400px;
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
 	}
-	#work .w-all .w-info {
+	#properties .w-all .w-info {
 		height: 100%;
 	}
-	#work .w-all .w-img {
+	#properties .w-all .w-img {
 		height: 100%;
 	}
-	/* Work Section End */
+	/*Properties Section End */
 
 	/* About Section */
 	#about .about {
