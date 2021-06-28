@@ -304,8 +304,6 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/img-1.png);
-	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
@@ -322,13 +320,13 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
-#services .s-bot.icon {
-	height: 80px;
-	width: 80px;
-	margin-bottom: 20px;
+
+.s-img{
+    width: 600px;
+    height: 200px;
 }
 #services .s-item h2 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -394,16 +392,7 @@ p {
 	overflow: hidden;
 	position: relative;
 }
-#properties .w-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
-}
+
 #properties .w-img img {
 	transition: 0.3s ease transform;
 }
@@ -411,6 +400,12 @@ p {
 	transform: scale(1.1);
 }
 
+#properties .btn {
+	color:black;
+}
+
+
+/*About Section Begin*/
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
@@ -432,14 +427,9 @@ p {
 	margin-bottom: 10px;
 }
 #about .right-column p {
-	margin-bottom: 20px;
+	margin-bottom: 70px;
 }
-#about .right-column .btn {
-	color: black;
-	margin-bottom: 50px;
-	padding: 10px 20px;
-	font-size: 2rem;
-}
+
 #about .left-column .a-img {
 	height: 100%;
 	width: 100%;
