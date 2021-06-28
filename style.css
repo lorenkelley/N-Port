@@ -44,7 +44,11 @@ p {
 	text-align: center;
 }
 .s-title span {
-	color: rgb(255, 72, 0);
+	background-image: linear-gradient(60deg, #1A6DFF 0%, #C822FF 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 
 .btn {
@@ -52,8 +56,11 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid rgb(255, 72, 0);
-	font-size: 2rem;
+	border-style: solid; 
+    border-image:linear-gradient(60deg, #1A6DFF 0%, #C822FF 100%);
+    border-image-slice: 1;
+	border-width: 2px ;
+    font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	margin-top: 30px;
@@ -62,7 +69,7 @@ p {
 }
 .btn:hover {
 	color: white;
-	background-color: rgb(255, 72, 0);
+	background-image: linear-gradient(60deg, #1A6DFF 0%, #C822FF 100%);
 }
 .label h1 {
 	font-size: 3rem;
@@ -70,7 +77,11 @@ p {
 	color: white;
 }
 .label h1 span {
-	color: rgb(255, 72, 0);
+	background-image: linear-gradient(60deg, #1A6DFF 0%, #C822FF 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 
 /* Header section */
@@ -84,7 +95,7 @@ p {
 }
 #head .head {
 	min-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.24);
+	background-color: black;
 	transition: 0.3s ease background-color;
 }
 #head .navbar {
@@ -202,7 +213,7 @@ p {
 
 /* Start Home Section */
 #home {
-	background-image: url(./img/hero-bg.png);
+	background-image: url(./luxuryback.jpeg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -250,7 +261,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: rgb(255, 72, 0);
+	background-image: linear-gradient(60deg, #1A6DFF 0%, #C822FF 100%);
 	animation: txt_box_display 1s ease;
 	animation-delay: 0.5s;
 }
@@ -307,7 +318,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-color:black;
 	opacity: 0.9;
 	z-index: -1;
 }
@@ -362,7 +373,7 @@ p {
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-color: black;
 	color: white;
 }
 #properties .w-info h1 {
@@ -442,7 +453,10 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid rgb(255, 72, 0);
+	border-style: solid; 
+    border-image:linear-gradient(60deg, #1A6DFF 0%, #C822FF 100%);
+    border-image-slice: 1;
+    border-width: 10px ;
 	z-index: -1;
 }
 
@@ -490,8 +504,10 @@ p {
 	font-weight: 500;
 }
 
+
+/*footer css*/
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-color: black
 }    
 
 #footer .footer {
@@ -529,7 +545,7 @@ p {
 	font-size: 1.3rem;
 }
 
-/*Keyframe for text and hamburger */
+/*Keyframe for head text and hamburger bar */
 
 @keyframes txt_box_display {
 	50% {
@@ -623,7 +639,10 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid crimson;
+		border-style: solid; 
+        border-image:linear-gradient(60deg, #1A6DFF 0%, #C822FF 100%);
+        border-image-slice: 1;
+        border-width: 10px ;
 	}
 	#about .right-column {
 		text-align: left;

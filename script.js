@@ -13,7 +13,7 @@ ham_menu.addEventListener('click', () => {
 document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
-		head.style.backgroundColor = 'pink';
+		head.style.backgroundColor = 'black';
 	} else {
 		head.style.backgroundColor = 'transparent';
 	}
